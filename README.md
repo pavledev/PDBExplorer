@@ -1,4 +1,6 @@
 # PDBExplorer
+
+Tool for browsing PDB data and generating header and source files
  
 ## Building Requirements
  1. Install Qt 5.15.2 (MSVC 2019 32-bit and MSVC 2019 64-bit) and add bin folder to PATH environment variable (C:\Qt\5.15.2\msvc2019\bin)
