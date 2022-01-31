@@ -1,0 +1,1026 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>OptionsDialog</class>
+ <widget class="QDialog" name="OptionsDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1382</width>
+    <height>860</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>OptionsDialog</string>
+  </property>
+  <widget class="QGroupBox" name="grpExportOptions">
+   <property name="geometry">
+    <rect>
+     <x>580</x>
+     <y>130</y>
+     <width>341</width>
+     <height>181</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Microsoft Sans Serif</family>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="title">
+    <string>Export options</string>
+   </property>
+   <widget class="QRadioButton" name="rbGenerateOnlyHeader">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>40</y>
+      <width>201</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Generate only .h file</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="rbGenerateOnlySource">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>70</y>
+      <width>221</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Generate only .cpp file</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="rbGenerateBoth">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>100</y>
+      <width>191</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Generate both files</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="chkExportDependencies">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>140</y>
+      <width>211</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Export dependencies</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="btnCancel">
+   <property name="geometry">
+    <rect>
+     <x>1230</x>
+     <y>800</y>
+     <width>131</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Microsoft Sans Serif</family>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Cancel</string>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="grpTypeInfoOptions">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>20</y>
+     <width>561</width>
+     <height>831</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Microsoft Sans Serif</family>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="title">
+    <string>Type info options</string>
+   </property>
+   <widget class="QCheckBox" name="chkDisplayComments">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>70</y>
+      <width>181</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Display comments</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="chkDisplayNonImplementedFunctions">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>100</y>
+      <width>481</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Display non implemented functions (pure is exception)</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="chkIncludeConstKeyword">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>490</y>
+      <width>251</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Include const keyword</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="chkApplyReturnValueOptimization">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>370</y>
+      <width>301</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Apply return value optimization</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="chkIncludeOnlyPublicAccessSpecifier">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>550</y>
+      <width>331</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Include only public access specifier</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="chkApplyRuleOfThree">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>340</y>
+      <width>211</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Apply &quot;Rule of Three&quot;</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="chkAddNoVTableKeyword">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>670</y>
+      <width>401</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Add novtable keyword to abstract class/struct</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="chkDisplayVTablePointerIfExists">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>130</y>
+      <width>291</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Display vTable pointer if it exists</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="chkAddInlineKeywordToInlineFunctions">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>580</y>
+      <width>361</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Add inline keyword for inline functions</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="chkAddDefaultCtorAndDtorToUDT">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>310</y>
+      <width>461</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Add default constructor and destructor to inner udt</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="chkAddDeclspecKeywords">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>640</y>
+      <width>421</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Add declspec keywords (novtable is exception)</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="chkDisplayIncludes">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>40</y>
+      <width>361</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Display includes (#include &quot;fileName.h&quot;)</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="chkDisplayCallingConventions">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>250</y>
+      <width>431</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Display calling conventions (thiscall is exception)</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="chkRemoveScopeResolutionOperator">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>430</y>
+      <width>441</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Remove scope resolution operator when possible</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="chkDisplayEmptyUDTAndEnums">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>220</y>
+      <width>281</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Display empty udts and enums</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="chkDisplayTypedefs">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>160</y>
+      <width>161</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Display typedefs</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="chkDisplayCallingConventionsForFunctionPointers">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>280</y>
+      <width>411</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Display calling convention for function pointers</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="chkDisplayFriendFunctions">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>190</y>
+      <width>321</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Display friend functions and classes</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="chkApplyEmptyBaseClassOptimization">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>400</y>
+      <width>331</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Apply empty base class optimization</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="chkDeclareStaticVariablesWithInlineKeyword">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>610</y>
+      <width>451</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Declare static variables with inline keyword (C++17)</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="chkDeclareFunctionsForStaticVariables">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>460</y>
+      <width>321</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Declare functions for static variables</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="chkAddExplicitKeyword">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>700</y>
+      <width>521</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Add explicit keyword for constructors with single parameter</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="chkAddNoexceptKeyword">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>730</y>
+      <width>251</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Add noexcept keyword</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="chkIncludeVolatileKeyword">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>520</y>
+      <width>251</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Include volatile keyword</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="btnOk">
+   <property name="geometry">
+    <rect>
+     <x>1090</x>
+     <y>800</y>
+     <width>131</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Microsoft Sans Serif</family>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>OK</string>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="grpNamingConventions">
+   <property name="geometry">
+    <rect>
+     <x>940</x>
+     <y>350</y>
+     <width>421</width>
+     <height>441</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Microsoft Sans Serif</family>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="title">
+    <string>Naming conventions</string>
+   </property>
+   <widget class="QGroupBox" name="grpUDTAndEnums">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>30</y>
+      <width>291</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Microsoft Sans Serif</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="title">
+     <string>UDT and Enums</string>
+    </property>
+    <widget class="QCheckBox" name="chkRemoveHunNotFromUDTAndEnums">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>30</y>
+       <width>261</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Remove hungarian notation</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="grpFunctionNames">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>110</y>
+      <width>291</width>
+      <height>141</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Microsoft Sans Serif</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="title">
+     <string>Function names</string>
+    </property>
+    <widget class="QRadioButton" name="rbFunctionCamelCase">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>40</y>
+       <width>131</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Camel Case</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="rbFunctionPascalCase">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>70</y>
+       <width>131</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Pascal Case</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="rbFunctionSnakeCase">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>100</y>
+       <width>131</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Snake Case</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="chkModifyFunctionNames">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>0</y>
+       <width>81</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Modify</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="grpVariableNames">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>260</y>
+      <width>291</width>
+      <height>181</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Microsoft Sans Serif</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="title">
+     <string>Variable names</string>
+    </property>
+    <widget class="QRadioButton" name="rbVariableCamelCase">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>40</y>
+       <width>131</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Camel Case</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="rbVariablePascalCase">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>70</y>
+       <width>131</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Pascal Case</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="rbVariableSnakeCase">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>100</y>
+       <width>131</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Snake Case</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="chkRemoveHunNotFromVariable">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>140</y>
+       <width>261</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Remove hungarian notation</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="chkModifyVariableNames">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>0</y>
+       <width>81</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Modify</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="grpAlignmentOptions">
+   <property name="geometry">
+    <rect>
+     <x>580</x>
+     <y>20</y>
+     <width>341</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Microsoft Sans Serif</family>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="title">
+    <string>Alignment options</string>
+   </property>
+   <widget class="QCheckBox" name="chkSpecifyTypeAlignment">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>40</y>
+      <width>291</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Specify type alignment (alignas)</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="chkDisplayPaddingBytes">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>70</y>
+      <width>211</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Display padding bytes</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="grpParameterNameStyles">
+   <property name="geometry">
+    <rect>
+     <x>940</x>
+     <y>240</y>
+     <width>421</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Microsoft Sans Serif</family>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="title">
+    <string>Custom parameter name styles</string>
+   </property>
+   <widget class="QRadioButton" name="rbIDANameStyle">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>40</y>
+      <width>181</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>IDA (p)</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="rbGhidraNameStyle">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>70</y>
+      <width>181</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Ghidra (param)</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="grpFunctionDeclaration">
+   <property name="geometry">
+    <rect>
+     <x>580</x>
+     <y>320</y>
+     <width>351</width>
+     <height>191</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Microsoft Sans Serif</family>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="title">
+    <string>Function which returns function pointer</string>
+   </property>
+   <widget class="QGroupBox" name="grpDeclaration">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>30</y>
+      <width>281</width>
+      <height>161</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Microsoft Sans Serif</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="title">
+     <string>Declaration</string>
+    </property>
+    <widget class="QRadioButton" name="rbTrailingReturnType">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>30</y>
+       <width>181</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Trailing return type</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="rbTypedef">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>60</y>
+       <width>91</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>typedef</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="rbUsing">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>90</y>
+       <width>71</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>using</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="rbAuto">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>120</y>
+       <width>131</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>auto (C++14)</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="grpAliasDeclarations">
+   <property name="geometry">
+    <rect>
+     <x>580</x>
+     <y>630</y>
+     <width>351</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Microsoft Sans Serif</family>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="title">
+    <string>Alias declarations</string>
+   </property>
+   <widget class="QRadioButton" name="rbUseUsingKeyword">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>70</y>
+      <width>181</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Use using keyword</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="rbUseTypedefKeyword">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>40</y>
+      <width>201</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Use typedef keyword</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="grpCPPCodeOptions">
+   <property name="geometry">
+    <rect>
+     <x>940</x>
+     <y>20</y>
+     <width>421</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Microsoft Sans Serif</family>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="title">
+    <string>CPP code options</string>
+   </property>
+   <widget class="QCheckBox" name="chkImplementDefaultConstructorAndDestructor">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>40</y>
+      <width>401</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Implement default constructor and destructor</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="chkImplementMethodsOfInnerUDT">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>70</y>
+      <width>301</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Implement methods of inner UDT</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="grpVariadicFunctionDeclaration">
+   <property name="geometry">
+    <rect>
+     <x>580</x>
+     <y>520</y>
+     <width>351</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Microsoft Sans Serif</family>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="title">
+    <string>Variadic function declaration</string>
+   </property>
+   <widget class="QRadioButton" name="rbUseVAList">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>70</y>
+      <width>181</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>va_list</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="rbUseTemplateFunction">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>40</y>
+      <width>201</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Template function</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="grpNameDemanglers">
+   <property name="geometry">
+    <rect>
+     <x>940</x>
+     <y>130</y>
+     <width>351</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Microsoft Sans Serif</family>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="title">
+    <string>Name demanglers</string>
+   </property>
+   <widget class="QRadioButton" name="rbUseCustomDemangler">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>70</y>
+      <width>221</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Use custom demangler</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="rbUseUndname">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>40</y>
+      <width>221</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Use undname</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

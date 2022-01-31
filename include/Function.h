@@ -1,0 +1,68 @@
+﻿#pragma once
+
+#include <Windows.h>
+#include "DIA SDK/cvconst.h"
+#include <QString>
+#include "RecordType.h"
+#include "Data.h"
+
+struct Function
+{
+    CV_access_e access;
+    DWORD addressSection;
+    ULONGLONG length;
+    QString name;
+    QString parentClassName;
+    QString originalParentClassName;
+    QString parentType;
+    DWORD virtualBaseOffset;
+    CV_call_e callingConvention;
+    ULONGLONG virtualAddress;
+    DWORD relativeVirtualAddress;
+    BOOL isCompilerGenerated;
+    BOOL isNaked;
+    BOOL isStatic;
+    BOOL isNoInline;
+    BOOL isNotReached;
+    BOOL isNoReturn;
+    BOOL isConst;
+    BOOL isVolatile;
+    BOOL isVirtual;
+    BOOL isPure;
+    BOOL isOverridden;
+    BOOL isConstructor;
+    BOOL isDefaultConstructor;
+    BOOL isDestructor;
+    BOOL isCopyConstructor;
+    BOOL isCopyAssignmentOperator;
+    BOOL isCastOperator;
+    BOOL isVariadic;
+    BOOL isNonImplemented;
+    BOOL isGeneratedByApp;
+    BOOL isRVOApplied;
+    BOOL isIntroVirtual;
+    BOOL hasCustomCallingConvention;
+    BOOL hasAlloca;
+    BOOL hasEH;
+    BOOL hasEHa;
+    BOOL hasInlAsm;
+    BOOL hasLongJump;
+    BOOL hasSecurityChecks;
+    BOOL hasSEH;
+    BOOL hasSetJump;
+    BOOL hasInlSpec;
+    BOOL hasOptimizedCodeDebugInfo;
+    BOOL farReturn;
+    BOOL interruptReturn;
+    BOOL noStackOrdering;
+    QString prototype;
+    DWORD indexOfVTable;
+    QString vTableName;
+    Data returnType1;
+    QString returnType2;
+    QString originalReturnType;
+    DWORD parametersCount;
+    QList<QString> parameters;
+    QList<QString> originalParameters;
+    BOOL returnsFunctionPointer;
+};
