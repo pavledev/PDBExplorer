@@ -1,4 +1,6 @@
-﻿#include <Windows.h>
+#pragma once
+
+#include <Windows.h>
 #include <QString>
 #include "SymbolType.h"
 
